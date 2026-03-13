@@ -1,8 +1,10 @@
-# Warm Introduction Sequence — 3-Email Framework
+# Voltaage Warm Introduction Sequence — 3-Email Framework
 
 > A 3-email warm outreach sequence for prospects where you share context:
 > mutual connection, same event, shared community, content interaction, etc.
 > Replace all [PLACEHOLDER] fields with prospect-specific information.
+>
+> **Voltaage Defaults:** [YOUR_COMPANY] = Voltaage. Lead with infrastructure intelligence, not features. Reference shared context (EV charging events, mobility conferences, infrastructure forums).
 
 ---
 

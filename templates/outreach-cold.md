@@ -1,7 +1,13 @@
-# Cold Outreach Sequence — 5-Email Framework
+# Voltaage Cold Outreach Sequence — 5-Email Framework
 
 > A structured 5-email cold outreach sequence with integrated LinkedIn touchpoints.
 > Replace all [PLACEHOLDER] fields with prospect-specific information.
+>
+> **Voltaage Defaults:**
+> - [YOUR_COMPANY] = Voltaage
+> - [ACHIEVE_OUTCOME] examples: "identify the highest-ROI locations for new charging stations", "reduce infrastructure CAPEX waste by up to 30%", "achieve 95%+ accuracy in demand forecasting for new sites"
+> - [HOW_YOU_DO_IT] = "combining real-time data from 5,100+ active chargers with geospatial AI agents"
+> - [ONE_PROOF_POINT] examples: "Our platform analyzes data across 2,603 cities to predict utilization rates before a single station is built.", "We've guided 168 new installations with 2x territory growth in one year."
 
 ---
 

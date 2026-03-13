@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """
-Lead Scorer — AI Sales Team for Claude Code
-Implements BANT + MEDDIC scoring algorithm for lead qualification.
+Lead Scorer — Voltaage Sales Intelligence
+Implements BANT + MEDDIC + Voltaage Fit scoring algorithm for lead qualification.
 
 Usage:
     python3 lead_scorer.py <input.json>
@@ -51,6 +51,14 @@ def score_budget(signals):
     tech_spend = signals.get("tech_spend_indicators", [])
     score += min(len(tech_spend) * 2, 7)
 
+    # Voltaage-specific budget signals
+    if signals.get("eu_infrastructure_funding"):
+        score += 5
+    if signals.get("green_deal_budget"):
+        score += 4
+    if signals.get("public_tender_participant"):
+        score += 3
+
     return min(score, 25)
 
 
@@ -99,6 +107,18 @@ def score_need(signals):
     elif complaints >= 1:
         score += 4
 
+    # Voltaage-specific need signals
+    infra_signals = signals.get("infrastructure_pain_signals", 0)
+    if infra_signals >= 3:
+        score += 8
+    elif infra_signals >= 1:
+        score += 5
+
+    if signals.get("fleet_electrification_need"):
+        score += 5
+    if signals.get("afir_compliance_need"):
+        score += 6
+
     return min(score, 25)
 
 
@@ -119,6 +139,53 @@ def score_timeline(signals):
         score += 5
     elif urgency >= 1:
         score += 3
+
+    return min(score, 25)
+
+
+# ---------------------------------------------------------------------------
+# Voltaage Fit Scoring (additional dimension)
+# ---------------------------------------------------------------------------
+
+def score_voltaage_fit(signals):
+    """Score Voltaage-specific fit signals (0-25).
+
+    Evaluates industry tier, geographic alignment, infrastructure footprint,
+    and planning tool maturity.
+    """
+    score = 0
+
+    # Industry tier (from voltaage-context.md)
+    industry_tier = signals.get("industry_tier", 0)
+    if industry_tier == 1:
+        score += 10
+    elif industry_tier == 2:
+        score += 7
+    elif industry_tier == 3:
+        score += 4
+
+    # Geographic alignment
+    if signals.get("operates_in_france_italy"):
+        score += 5
+    elif signals.get("operates_in_eu"):
+        score += 3
+
+    # Infrastructure footprint
+    infra_sites = signals.get("infrastructure_sites", 0)
+    if infra_sites >= 100:
+        score += 5
+    elif infra_sites >= 20:
+        score += 4
+    elif infra_sites >= 5:
+        score += 3
+    elif infra_sites > 0:
+        score += 1
+
+    # Planning tool maturity signals
+    if signals.get("uses_geospatial_tools"):
+        score += 3
+    if signals.get("manual_planning_process"):
+        score += 2
 
     return min(score, 25)
 
@@ -265,6 +332,10 @@ def score_lead(data):
     t_score = score_timeline(timeline)
     total = b_score + a_score + n_score + t_score
 
+    # Voltaage-specific fit scoring
+    voltaage_signals = data.get("voltaage_fit_signals", {})
+    v_score = score_voltaage_fit(voltaage_signals)
+
     grade = compute_grade(total)
     meddic = assess_meddic(data)
     confidence = compute_confidence(data)
@@ -279,6 +350,7 @@ def score_lead(data):
             "need": {"score": n_score, "max": 25},
             "timeline": {"score": t_score, "max": 25},
         },
+        "voltaage_fit": {"score": v_score, "max": 25},
         "meddic_completeness": meddic,
         "lead_grade": grade,
         "confidence_level": confidence,

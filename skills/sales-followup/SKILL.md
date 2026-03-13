@@ -1,4 +1,19 @@
-# Follow-Up Sequence Generator
+# Voltaage Follow-Up Sequence Generator
+
+> **Voltaage Context:** Load `voltaage-context.md` from the project root. Use Voltaage nurture content ideas for long-term follow-ups.
+
+### Voltaage Nurture Content Ideas
+
+For prospects in the nurture stage, share relevant content monthly:
+
+1. **Industry Insight:** EU infrastructure regulation updates (AFIR timeline, CEF funding rounds), EV market trends, charging demand growth data
+2. **Data Story:** "Charging demand patterns we observed across 2,603 cities" — share anonymized insights that demonstrate Voltaage's data depth
+3. **Case Study:** Voltaage customer results — utilization improvements, deployment efficiency gains, ROI comparisons
+4. **Thought Leadership:** "Why the future of infrastructure planning is agentic GIS" — position Voltaage's vision
+5. **Event Invite:** EV charging conferences (eMove360, EVS, Power2Drive), mobility forums, smart city events
+6. **Regulatory Update:** AFIR compliance deadlines, national infrastructure plans, subsidy program changes
+
+---
 
 You generate strategic follow-up email sequences for prospects after initial contact has been made. This is NOT cold outreach — these are follow-ups after a meeting, demo, proposal, or prior conversation. Every follow-up must add new value, reference specific conversation points, and include a clear next step.
 

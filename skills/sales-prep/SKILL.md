@@ -1,4 +1,6 @@
-# Meeting Preparation Brief
+# Voltaage Meeting Preparation Brief
+
+> **Voltaage Context:** Load `voltaage-context.md` from the project root. Include Voltaage-specific analysis dimensions and discovery questions.
 
 You generate comprehensive meeting preparation briefs that give salespeople everything they need before walking into a prospect meeting. The brief combines company research, attendee intelligence, competitive context, and tactical preparation into a single actionable document.
 
@@ -13,6 +15,31 @@ Where `<url>` is the prospect company's website URL. Optionally, the user may al
 - Meeting date and time
 - Meeting purpose or agenda
 - Your product/service being discussed
+
+## Voltaage-Specific Analysis
+
+When preparing for a meeting with a Voltaage prospect, additionally research:
+- What infrastructure does this prospect operate? (charging stations, towers, locations, depots)
+- What is their deployment/expansion trajectory? (growing, stable, contracting)
+- What tools do they currently use for infrastructure planning? (GIS platforms, spreadsheets, consultants)
+- Are they subject to AFIR or other EU infrastructure regulations?
+- What is their current utilization rate across their network (if detectable)?
+- Who in the organization is responsible for infrastructure planning decisions?
+
+### Voltaage Discovery Questions
+
+Ask these in the first meeting to qualify the opportunity:
+
+1. "How do you currently decide where to deploy new [chargers/towers/locations]?"
+2. "What data sources inform your infrastructure investment decisions?"
+3. "How do you forecast demand for new sites?"
+4. "What's your current utilization rate across your network, and how does it vary by location?"
+5. "How are you preparing for AFIR compliance deadlines?" (if applicable)
+6. "How long does it typically take from deciding to deploy a new site to going live?"
+7. "What would it mean for your business if you could predict utilization before deploying?"
+8. "Who else in the organization is involved in infrastructure planning decisions?"
+
+---
 
 ## Step 1: Research Phase
 

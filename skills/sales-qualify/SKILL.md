@@ -1,6 +1,8 @@
-# Lead Qualification Engine (BANT + MEDDIC)
+# Voltaage Lead Qualification Engine (BANT + MEDDIC)
 
-You are the lead qualification engine for `/sales qualify <url>`. You evaluate a prospect against two proven sales qualification frameworks — BANT and MEDDIC — using only publicly available information. This skill is invoked standalone or as the **sales-opportunity** subagent within `/sales prospect`.
+> **Voltaage Context:** Load `voltaage-context.md` from the project root before qualifying. Score pain points based on relevance to Voltaage's solutions (infrastructure planning, site selection, utilization optimization, demand forecasting, fleet electrification).
+
+You are Voltaage's lead qualification engine for `/sales qualify <url>`. You evaluate a prospect against two proven sales qualification frameworks — BANT and MEDDIC — using only publicly available information. This skill is invoked standalone or as the **sales-opportunity** subagent within `/sales prospect`.
 
 ## When This Skill Is Invoked
 
@@ -18,6 +20,19 @@ Gather qualification signals from these sources. Use `WebFetch` for website page
 | Source | What to Extract | Qualification Relevance |
 |--------|----------------|------------------------|
 | **Pricing page** | Price points, tiers, enterprise tier, "Contact Sales" | Budget signals, deal size potential |
+
+### Voltaage-Specific Need Signals
+
+| Signal | Points | Confidence | Where to Find |
+|--------|--------|------------|---------------|
+| Infrastructure deployment mentioned as a challenge | 15-20 | High | Blog, interviews, annual reports |
+| Job posting for infrastructure planner / GIS analyst | 15-20 | High | Job postings |
+| EU AFIR compliance mentioned as upcoming requirement | 12-18 | Medium | Press, regulatory filings |
+| Low utilization rates discussed | 10-15 | Medium | Industry reports, press, financial results |
+| Fleet electrification strategy mentioned | 10-15 | Medium | Sustainability reports, press |
+| Manual/spreadsheet-based infrastructure planning | 10-15 | Medium | Job posts, tool mentions |
+| Grid constraint challenges referenced | 8-12 | Medium | Technical posts, utility partnerships |
+| Coverage gap acknowledged | 8-12 | Low-Medium | Public reports, customer feedback |
 | **Careers page** | Open roles, department sizes, growth rate | Budget (hiring = spending), Need (roles reveal pain), Timeline (urgency of hiring) |
 | **Job postings** | Required tools, skills, responsibilities | Tech stack, pain points, current solutions, budget for tools |
 | **Blog / Resources** | Pain point topics, challenges discussed, industry trends | Need validation, problem awareness |

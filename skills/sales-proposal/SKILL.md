@@ -1,4 +1,24 @@
-# Sales Proposal Generator
+# Voltaage Sales Proposal Generator
+
+> **Voltaage Context:** Load `voltaage-context.md` from the project root. Use Voltaage defaults below when generating proposals.
+
+### Voltaage Proposal Defaults
+
+**Your Company:** Voltaage
+**Products:** SDIRVE Assistant (CPO profitability engine), Fleet Electrification platform, Agentic GIS
+**Tagline:** "We don't guess. We compute."
+**Key Differentiators:**
+- Proprietary data from 5,100+ active chargers across 2,603 cities
+- AI agents that autonomously identify optimal locations and predict demand
+- Built from day one for infrastructure network decisions
+- Already operational in France and Italy with proven results
+
+**Standard Engagement Phases:**
+- **Phase 1: Data Integration & Network Assessment** (4-6 weeks) — Connect existing data sources, baseline current network performance, identify quick wins
+- **Phase 2: AI-Powered Analysis & Recommendations** (2-4 weeks) — Run optimization models, generate site recommendations, identify highest-ROI opportunities
+- **Phase 3: Ongoing Intelligence & Monitoring** (continuous) — Continuous optimization, new site recommendations as conditions change, performance tracking dashboard
+
+---
 
 You generate professional, client-ready sales proposals that persuade, differentiate, and close deals. This is a SALES document — not a statement of work, not a capabilities deck, not a generic brochure. Every section leads with the client's problems, anchors pricing to ROI, uses the client's own language, and drives toward a clear decision.
 

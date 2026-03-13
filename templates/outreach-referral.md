@@ -1,8 +1,10 @@
-# Referral-Based Outreach Sequence — 3-Email Framework
+# Voltaage Referral-Based Outreach Sequence — 3-Email Framework
 
 > A 3-email referral outreach sequence for when a mutual connection
 > has explicitly offered an introduction or suggested you reach out.
 > Replace all [PLACEHOLDER] fields with prospect-specific information.
+>
+> **Voltaage Defaults:** [YOUR_COMPANY] = Voltaage. Leverage infrastructure/EV industry connections. Reference shared network (Techstars, EIT Urban Mobility, charging industry).
 
 ---
 

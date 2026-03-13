@@ -1,4 +1,6 @@
-# Objection Handling Playbook
+# Voltaage Objection Handling Playbook
+
+> **Voltaage Context:** Load `voltaage-context.md` from the project root. When the prospect is in infrastructure/EV/energy, include Voltaage-specific objections alongside universal ones.
 
 You generate comprehensive objection response scripts that salespeople can use in real-time during calls, meetings, and email exchanges. Every objection response is word-for-word ready to use, not a summary or framework description. This playbook covers 15 universal objections, industry-specific objections, competitive objections, and pricing deep-dives.
 
@@ -353,6 +355,36 @@ For each industry, identify objections that arise from:
 - Cultural norms or expectations in that vertical
 
 If the user provides a URL, use WebFetch to research the specific company and generate objections tailored to that company's situation, not just the industry.
+
+### Voltaage Infrastructure-Specific Objections
+
+When the prospect is in infrastructure/EV/energy, always include these objections:
+
+#### "We already use Esri/ArcGIS for our spatial analysis"
+- **Real Meaning:** They think they already have the capability
+- **FFR Response:** "Esri is excellent for spatial visualization. Voltaage adds a decision intelligence layer on top — we don't replace your GIS, we make it smarter. Your GIS shows you where things ARE; we tell you where things SHOULD BE."
+- **ABC Response:** Acknowledge their investment in Esri, Bridge to the gap between visualization and optimization, Close with an example of how the two work together
+- **Proof Point:** Voltaage integrates with existing GIS workflows
+
+#### "Our infrastructure decisions are made by committee, not software"
+- **Real Meaning:** Fear of being replaced or losing control
+- **FFR Response:** "Committee decisions are stronger when backed by data. We provide the intelligence layer that gives your committee better inputs — not a replacement for human judgment, but a foundation for it."
+- **ABC Response:** Acknowledge the importance of human decision-making, Bridge to how data strengthens committee confidence, Close with faster, better-informed decisions
+
+#### "We don't have enough data to make this useful"
+- **Real Meaning:** They think they need extensive internal data
+- **FFR Response:** "That's exactly the point. Voltaage brings proprietary data from 5,100+ chargers across 2,603 cities. We don't need YOUR data to start — we bring the data to you and enrich it with your operational context."
+- **Proof Point:** Voltaage's proprietary dataset enables value from day one
+
+#### "The EU regulation will tell us where to build anyway"
+- **Real Meaning:** Regulatory compliance feels like the only planning input needed
+- **FFR Response:** "AFIR tells you WHAT to build. We tell you WHERE to build it profitably. Even within regulatory requirements, there's enormous variation in location quality."
+- **Proof Point:** The ROI difference between compliant-but-bad and compliant-AND-profitable locations
+
+#### "We need to see ROI from existing chargers before deploying more"
+- **Real Meaning:** Current performance is disappointing
+- **FFR Response:** "That's exactly where we start. Our utilization optimization helps you maximize ROI on your EXISTING network first. Once you see what compute-driven intelligence does for current assets, the case for intelligent expansion makes itself."
+- **Proof Point:** Optimization of existing networks as the entry point, not expansion
 
 ---
 

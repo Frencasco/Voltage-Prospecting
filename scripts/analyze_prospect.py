@@ -147,6 +147,16 @@ TECH_SIGNATURES = {
     "Drift": [r"drift\.com", r"js\.driftt\.com"],
     "Stripe": [r"js\.stripe\.com", r"stripe"],
     "Salesforce": [r"force\.com", r"salesforce"],
+    # GIS / Geospatial tools (Voltaage-relevant)
+    "ArcGIS/Esri": [r"arcgis", r"esri", r"js\.arcgis\.com"],
+    "QGIS": [r"qgis"],
+    "Carto": [r"carto\.com", r"cartodb"],
+    "Mapbox": [r"mapbox", r"api\.mapbox\.com"],
+    "Google Maps Platform": [r"maps\.googleapis", r"google.*maps"],
+    "Leaflet": [r"leaflet", r"unpkg\.com/leaflet"],
+    # Infrastructure management (Voltaage-relevant)
+    "OCPP": [r"ocpp", r"open charge point"],
+    "SCADA": [r"scada"],
 }
 
 SOCIAL_PATTERNS = {
@@ -159,16 +169,25 @@ SOCIAL_PATTERNS = {
 }
 
 INDUSTRY_KEYWORDS = {
+    # Voltaage Tier 1 industries
+    "EV Charging": ["charging", "charger", "ev", "electric vehicle", "cpo", "charge point", "emobility", "e-mobility"],
+    "Energy/Utilities": ["energy", "utility", "grid", "power", "electricity", "renewable", "solar", "wind"],
+    "Public Infrastructure": ["municipality", "public authority", "city planning", "urban mobility", "smart city", "public transport"],
+    # Voltaage Tier 2 industries
+    "Telecom": ["telecom", "5g", "cell tower", "antenna", "coverage", "mobile network", "fiber"],
+    "Renewable Energy": ["solar farm", "wind farm", "renewable", "clean energy", "green energy", "storage"],
+    "Infrastructure": ["infrastructure", "network planning", "deployment", "site selection", "asset management"],
+    # Voltaage Tier 3 industries
+    "Logistics": ["logistics", "fleet", "depot", "warehouse", "distribution", "supply chain", "last mile"],
+    "Mobility": ["mobility", "transport", "transit", "automotive", "fleet management"],
+    "Retail Networks": ["retail network", "franchise", "store locations", "chain", "outlets"],
+    "Real Estate": ["real estate", "property", "development", "construction", "mixed-use"],
+    # General industries (kept for broader detection)
     "SaaS": ["saas", "software as a service", "cloud platform", "subscription"],
     "Fintech": ["fintech", "financial technology", "payments", "banking"],
     "Healthcare": ["healthcare", "health tech", "medical", "patient", "clinical"],
-    "E-commerce": ["ecommerce", "e-commerce", "online store", "shop", "retail"],
-    "EdTech": ["edtech", "education", "learning platform", "courses"],
-    "Cybersecurity": ["security", "cyber", "threat", "vulnerability"],
+    "E-commerce": ["ecommerce", "e-commerce", "online store", "shop"],
     "AI/ML": ["artificial intelligence", "machine learning", "ai-powered", "deep learning"],
-    "DevTools": ["developer", "devtools", "api", "sdk", "infrastructure"],
-    "MarTech": ["marketing", "martech", "analytics", "campaign", "automation"],
-    "HRTech": ["hr tech", "human resources", "recruiting", "talent"],
 }
 
 

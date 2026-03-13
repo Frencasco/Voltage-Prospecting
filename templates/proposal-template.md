@@ -1,7 +1,15 @@
-# Client Proposal
+# Voltaage Client Proposal
 
 > Professional client proposal template with all 11 sections.
 > Customize all [PLACEHOLDER] fields for each prospect.
+>
+> **Voltaage Defaults:**
+> - [YOUR_COMPANY_NAME] = Voltaage
+> - [YOUR_TITLE] = as appropriate
+> - Products: SDIRVE Assistant, Fleet Electrification platform, Agentic GIS
+> - Tagline: "We don't guess. We compute."
+> - Differentiators: Proprietary data (5,100+ chargers, 2,603 cities), AI agents for autonomous infrastructure decisions, domain-specific models
+> - Standard Phases: Phase 1 — Data Integration & Network Assessment (4-6 weeks), Phase 2 — AI-Powered Analysis & Recommendations (2-4 weeks), Phase 3 — Ongoing Intelligence & Monitoring (continuous)
 
 ---
 
