@@ -107,6 +107,7 @@ SKILLS=(
     sales-objections
     sales-icp
     sales-competitors
+    sales-discover
     sales-report
     sales-report-pdf
 )
@@ -171,6 +172,20 @@ for template in "$SOURCE_DIR"/templates/*.md; do
         cp "$template" "$SKILLS_DIR/sales/templates/"
         echo -e "  ${GREEN}✓${NC} $(basename "$template")"
         TEMPLATE_COUNT=$((TEMPLATE_COUNT + 1))
+    fi
+done
+
+# ---------------------------------------------------------------------------
+# Install Voltaage context files
+# ---------------------------------------------------------------------------
+echo -e "${BLUE}Installing Voltaage context...${NC}"
+
+CONTEXT_COUNT=0
+for ctx in voltaage-context.md IDEAL-CUSTOMER-PROFILE.md; do
+    if [ -f "$SOURCE_DIR/$ctx" ]; then
+        cp "$SOURCE_DIR/$ctx" "$SKILLS_DIR/sales/"
+        echo -e "  ${GREEN}✓${NC} $ctx"
+        CONTEXT_COUNT=$((CONTEXT_COUNT + 1))
     fi
 done
 
